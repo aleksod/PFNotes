@@ -22,7 +22,7 @@ Significant whitespace
     print("sweet")  
   }  
   However, Python only needs indentation to know what is nested inside:  
-   if z>50:  
+  if z>50:  
     print 'a'  
 
 Incrementing something is easy, can do += -= *= /=.  
