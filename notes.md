@@ -39,3 +39,11 @@ Read about _continue_ on your own.
 _pass_ is a placeholder for nothing on the line in a loop due to significant whitespace.  
 
 For ipython in particular, _whos_ shows dashboard with all variables of the current ipython session.  
+
+
+## 2016.09.20 Lecture
+
+Today we are going to look at 3 topics:
+1. strings
+2. for loops
+3. lists
