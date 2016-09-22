@@ -46,4 +46,45 @@ For ipython in particular, _whos_ shows dashboard with all variables of the curr
 Today we are going to look at 3 topics:
 1. strings
 2. for loops
-3. lists
+3. lists  
+
+String: sequence of characters  
+Triple quotes allow '''strings
+on
+separate
+lines
+'''  
+
+Can concatenate with '+' and repeat strings with '*'  
+
+Methods don't change variables, but act on them. Ex: s.split() splits a sentence, for example, or anything you want. We can chain methods, just keep adding dot methods. Ex: s.replace('this', 'that ').strip()  
+
+In the example above, 's' is a project and so is everything else in Python. Methods act on objects via dot notation.  
+
+What is whitespace?
+  Whitespace: spaces, tabs, line breaks, page breaks, etc.  
+
+Reversing a string: s[::-1]  
+
+Swapping variables: x, y = y, x  
+Similarly, x, y = (3, 4).  
+
+Functions and methods are also objects (everything is an object!).  
+
+Whitespace in Python is 4 spaces by convention, but any number of spaces is OK (stick to 4!).  
+
+Formatting:  '%s' is a format specifier:  
+'hello %s' % 'Alexei'  
+'hello %s %s' % ('Alexei', "Demchouk")  
+Can also do 'hello, {name1} {name2}'.format(name1='abc', name2='def')  
+
+### Lists
+You can nest lists: [1,3, 'radf', ['tre', 5]]  
+
+Lists are mutable, they can be changed with methods. Strings do not change with running methods on them. Ex: x.pop() will remove the last element from x, so x is different now.  
+
+All lists and strings are ITERABLES.  
+
+in - membership operator. Ex: 'bcd' in s => returns True if 'bcd' is found as an element in s.  
+
+NoneType is has only one example: None
