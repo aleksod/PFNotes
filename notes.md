@@ -88,3 +88,34 @@ All lists and strings are ITERABLES.
 in - membership operator. Ex: 'bcd' in s => returns True if 'bcd' is found as an element in s.  
 
 NoneType is has only one example: None
+
+## 2016.09.22 Lecture
+
+###Various numbering systems:
+* base 2, starts with "0b", ex: 0b10 = 2, 0b1000 = 8
+* base 8, starts with "0", ex: 010 = 8, 0100 = 64
+* base 16, starts with "0x", ex: 0x10 = 16, 0x0f = 15  
+
+###Tuples are immutable lists, basically.  
+* t = (1, 2)
+* t = 1, 2
+* t = tuple([1, 2])
+* t = (9,) # must have a comma after the number, otherwise is just a number  
+
+Language-wise,  
+* singleton
+* double, duple
+* triple
+* quadruple
+* 7-tuple, etc.  
+
+###Dictionaries are unordered data structures. Keys are immutable, values can be mutable, unless they are tuples.  
+
+dict.items - creates a list of key-value pairs
+dict.iteritems - creates key-value pairs on demand, so not as memory intensive.  
+
+Empty dictionaries are created by dict() or {}.  
+
+###Sets - mutable unordered __unique__ element collection.  
+
+Empty sets are created by set().  
