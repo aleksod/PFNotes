@@ -119,3 +119,68 @@ Empty dictionaries are created by dict() or {}.
 ###Sets - mutable unordered __unique__ element collection.  
 
 Empty sets are created by set().  
+
+## 2016.09.27 Lecture  
+
+__import this__ is an interesting Easter egg in Python  
+
+### Functions
+Functions are used for
+1. reusability
+2. abstraction
+
+We have dealt with functions before, such as __len(), enumerate(), range(), list(), str(), dict(), raw_input(), etc.__  
+
+Methods are also functions that MUST be called from an object through dot notation.  
+
+Functions may accept arguments (the stuff that goes into parenthesis).  
+
+To define a function, use __def__. For example:  
+
+def function_name():
+  return 5  
+
+If a string is created immedately after the function definition, then that string will be used as a help for that function (a.k.a. docstring), ex. s.f?  
+
+def f(n):
+  """This
+  is
+  a
+  doctring"""
+  return 8*n
+
+Parameter is _n_ in def f(n). Argument is what you put in parenthesis to work with, ex. f(8).  
+
+Default value can be defined like this:
+  def f(n, m=2):
+    return 2*n+m
+
+If only one number is passed, m=2 will be used for m.  
+
+It may be a good practice for all parameters to have default values.  
+
+def f (n, m, x=1, y=2) - n and m are mandatory arguments to be passed, x and y are keyword arguments. So __f(3, 4, 2)__ is understood as n=3, m=4, x=2, with the default y=2. __f(3, 3, y=6)__ will be executed with y=6 and x=1.  
+
+#### Variable Scope
+
+Values outside of functions are GLOBAL and can be accessed anywhere, inside functions and outside. Values in functions are local and are not accessible outside of functions.  
+
+### List Comprehension
+Example:
+  In [30]: [2*n for n in range(4)]
+  Out[30]: [0, 2, 4, 6]  
+  In [31]: '-'.join(s.upper() for s in ['hello', 'world'])
+  Out[31]: 'HELLO-WORLD'  
+  In [32]: [n for n in range(20) if n%3==0]
+  Out[32]: [0, 3, 6, 9, 12, 15, 18]  
+
+### Dictionary Comprehension  
+Format:
+  {k: v for (k, v) in [('a', 1), ('b', 2)]}
+Example:
+  In [33]: {k: k + ' dog' for k in ['a', 'b']}
+  Out[33]: {'a': 'a dog', 'b': 'b dog'}
+
+Instead of lists can use "generators" with (), e.g. it generates values on demand one by one and does not store the whole list in memory. Ex:  
+  g = (n for n in range(8)) # is a generator
+  [n for n in g] # will give you a list  
