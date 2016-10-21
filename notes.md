@@ -385,3 +385,76 @@ c = collection.Counter()
 from collections import defaultdict  
 d2 = defaultdict(float) # initializes a dictionary where values are float, in this case  
 import re # imports regular expressions functionality
+
+## 2016.10.11 Lecture  
+### Calculator Lab
+Code:  
+  with open('test.txt', 'r') as f # opens the file in read only mode  
+  for line in f:  
+    print line.strip()  
+  f.close()  
+
+  with open('test.txt', 'w') as f # opens the file in write mode  
+  f.write("test text")  
+  f.close()  
+
+Reverse Polish Calculator is also known as postfix notation (as opposed to prefix and infix).  
+Creates a data structure called a stack (one of the most fundamental data structures in computer science). Has two operations:
+1. Push (append)
+2. Pop
+Can use lists: list.append(), list.pop()  
+
+Goal: script calculator.py  
+In:   3 4 + (from user)  
+Out:  7  
+In: exit  
+(exits)  
+
+PEP - Python Extension Proposal (a.k.a. Python, Batteries Included)  
+
+## 2016.10.13 Lecture  
+Admissions and DSI questions? email cary.goltermann@galvanize.com  
+
+See day 9 hw solution calculator_steve.py  
+import argparse # lookup online how to use it (it allows to pass arguments when you enter something like "python calculator.py -i", etc.)  
+
+try: and except: is a way to try code and if there are errors you can put in a code to execute in case of a specified error. try: and except: go together, like if: and else:  
+
+## 2016.10.18 Lecture  
+### NumPy
+NumPy is a python package for numerical and scientific work.  
+NumPy was made in 2005 which is a combination of Numeric and Numarray libraries. In 2001 SciPy was made, which was a collection of scientific code.  
+
+"SciPy Stack" (libraries usually used for computation)
+* NumPy
+* SciPy
+* Matplotlib
+* IPython
+* Pandas
+* SymPy  
+Library ~ package, code with common purpose  
+
+Why do we need NumPy?
+* No need to do complicated loops
+* ndarray
+* broadcasting, vectorization
+* fast, written in C, C++, Fortran
+* analogous to Matlab, have things like linear algebra, signal processing, statistics, machine learning, etc.  
+
+## 2016.10.20 Lecture  
+* October 28 - the Dear Hunter show with Steve, at Philmore  
+* October 30 - SF Civic Symphony, 3 pm at the Nourse Theater  
+* Summer 2017 - CCRMA, music information retrieval  
+* Upcoming Galvanize workshop in ML and statistics, no dates yet, but keep your eyes open  
+* Industry teaching, ask Steve if interested  
+
+Feedback - Google form coming in email shortly. Can email to pamela.greenberg@galvanize.com and/or tammy.lee@galvanize.com  
+
+### Machine Learning  
+ML is pattern recognition.
+Supervised ML - training data has target label  
+Unsupervised ML - no target labels, also known as "clustering"  
+Classification ML - target is a categorical class label, discreet and finite  
+  Binary Classification - target is in the set (0, 1)
+  Multiclass - target is in the set (0, 1, ... , N-1)
+Regression ML - target is in the set of continuous variables set   
